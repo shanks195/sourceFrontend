@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container {
+    max-width: 1140px;
+    margin:auto 100px;
+    justify-content: center;
+}
+.logo {
+    padding-top: 1%;
+    box-sizing: border-box;
+        display: inline-block;   
+        width: 50%;  
+        float: left;
+}
+.logo h2 {
+    color:white;
+}
+.title-navbar {
+    width: 100%;
+    padding:1%;
+    overflow: hidden;
+    height: 50px;
+}
+
+.logo-button {
+    box-sizing: border-box;
+    display: inline-block;
+    float: right;
+    width: 50%;
+    padding-left: 48%;
+}
+.button {
+    border-radius: 9px;
+    border:3px solid rgb(153, 148, 148);
+    justify-content: center;
+    display: block;
+    width: 50px;
+    padding:50% 4%;
+    text-align: center;
+}
+.button:active {
+    border:3px solid white;
+    box-shadow: 5px 10px;
+}
+.button i {
+    font-size: 25px;
+    color:white;
+}
+.black-1 {
+    background: black;
+}
+.left {
+    text-align: justify;
+}
+.left h2 {
+    color: white;
+    padding:1%;
+}
+.left p {
+    color:#857c7c;
+    padding-bottom: 2%;
+    line-height: 20px;
+}
+.right h2 {
+    color: white;
+    padding:1%;
+}
+.right ul {
+  list-style: none;
+}
+.right ul li>a {
+    line-height: 20px;
+    color:#857c7c;
+    text-decoration: none;
+}
+.grid-8-4 {
+    column-gap: 26px;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+}
+.top-navbar {
+    padding:2% 0%;
+    display: none;
+    background: rgb(31, 28, 28);
+}
+
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .container {
+        max-width: 800px;
+        margin:auto 20px;
+        justify-content: center;
+    }
+    .logo-button {     
+        padding-left: 33%;
+    }
+    .logo-button .button {
+        padding:10% 4%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .container {
+        max-width: 500px;
+        margin:auto 20px;
+        justify-content: center;
+    }
+    .grid-12-sm {
+        display: grid;
+        grid-template-columns: 12fr;
+    }
+    .logo-button {
+        
+        padding-left: 33%;
+    }
+    .logo-button .button {
+        padding:15% 4%;
+    }
+    
+    .logo {
+        padding-top: 5%;
+        padding-right: 50%!important;
+    }
+    .logo h2 {
+        font-size: 16px;
+        color:white;
+    }
+  }
