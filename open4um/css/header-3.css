@@ -106,6 +106,30 @@
     justify-content: center;
     margin-bottom: 18%;
   }
+  #sidebar .list-items li a {
+    padding:2%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  #sidebar .list-items li a span {
+    display: inline-block!important;
+    float: left!important;
+    padding-left: 5%;
+  }
+  #sidebar .list-items li a >.avatar-circle {
+    width: 20%!important;
+    height: 50px!important;
+    border-radius: 50%!important;
+    display: inline-block;
+    float: left;
+
+
+    
+  }
+  #sidebar .list-items li a >.avatar-circle img {
+    height: 50px;
+    border-radius: 50%;
+}
   #sidebar .list-items .icons a{
     height: 100%;
     width: 40px;
