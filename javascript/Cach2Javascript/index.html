@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello javascript</title>
+    <script>
+        alert("hello javascript!!");
+    </script>
+    <style>
+        #index {
+            width: 100%;
+            height: 100vh;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="index">
+        <h1>Hello javascript</h1>
+        <button onclick="maudo()" >mau do</button>
+        <button onclick="mauxanh()">mau xanh</button>
+        <button onclick="mauvang()">mau vang</button>
+    </div>
+    <script>
+        function maudo(){
+            document.getElementById("index").style.backgroundColor = "red";
+        }
+        function mauxanh(){
+            document.getElementById("index").style.backgroundColor = "blue";
+        }
+        function mauvang(){
+            document.getElementById("index").style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+
+</html>

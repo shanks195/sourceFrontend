@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="text" placeholder="ban nhập tuổi" name="tuoi">
+    <script>
+    var  tuoi=document.getElementsByName("tuoi");
+         console.log(tuoi);
+      var firstName="John";
+      
+    //   console.log("age >= 20",tuoi >=20);
+    //   console.log("age <= 30",!(tuoi >=20));
+    //   console.log("age >= 20 && age < 30",tuoi >= 20 && tuoi < 30);
+    //   console.log("age >= 20 || age < 30",tuoi >= 20 || tuoi < 30);
+      if(tuoi < 13){
+          console.log(firstName +'là mot cau hoc sinh');
+      }else if(tuoi >=13 && tuoi <= 18){
+          console.log(firstname + 'la một câu bé tuổi teen');
+      } else if(tuoi > 18 && tuoi < 30){
+          console.log(firstName +'là mot nguoi trung nien');
+          console.log(firstName+ 'la mot nguoi dan ong truong thanh')
+      }
+      
+      
+  </script>
+    Toán tử logic cơ bản
+    AND(&&)==> trả về true nếu tất cả các điều kiên dều dúng.
+    OR(||) ==> trả ve true chì cần thỏa mãn một trong số điều kiện
+    NOT(!) ==> Phủ dinh true/ false value
+   
+ VAR B/A   AND   TRUE  FALSE
+          TRUE   TRUE  FALSE
+          FALSE  FALSE FALSE
+VAR B/A  OR    TRUE    FALSE
+        TRUE    TRUE   TRUE
+        FALSE   TRUE   FALSE
+
+Câu lệnh if/else đầy đủ:
+-Điều kiện là biểu thức luận lý, trả về true hoac false
+-Nếu trời mưa thì toi sẽ đi học
+if(condition1?){
+    //tu do
+} else if(condition2?){
+    //tu do.. conditon1 == false && condition2 == false
+}       
+</body>
+</html>

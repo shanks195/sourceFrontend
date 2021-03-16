@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //104
+        dtbJohn =(89+120+103)/3;
+
+        dtbMark =(116+94+123)/3;
+        //111
+        dtbMary = (97+134+105)/3;
+        //112
+        if(dtbJohn>dtbMark && dtbJohn > dtbMary){
+            console.log("Đội john la doi thang cuộc"+ dtbJohn);
+        } else if(dtbMark>dtbJohn && dtbMark> dtbMary){
+            console.log("Đoi Mark la doi chien thang"+dtbMark);
+        } else if(dtbMary>dtbJohn && dtbMary> dtbMark){
+            console.log("Doi mary la doi gianh chien thang: "+dtbMary);
+        } 
+        if(dtbJohn==dtbMark || dtbJohn == dtbMary){
+            console.log("Đội john la doi thang cuộc"+ dtbJohn);
+        } else if(dtbMark==dtbJohn || dtbMark == dtbMary){
+            console.log("Đoi Mark la doi chien thang"+dtbMark);
+        } else if(dtbMary==dtbJohn || dtbMary== dtbMark){
+            console.log("Doi mary la doi gianh chien thang: "+dtbMary);
+        } else {
+            console.log("k ai hoa nhau");
+        }
+
+    </script>
+</head>
+<body>
+    John, Mark và mary cung chơi bống rổ trong ba đội khác nhau.
+    Cuối trận,điểm số của John lần lượt là 89, 120 và 103.Điểm số đội của
+    Mark lần lượt là 116,94,123.Trong khi đó điểm số đội của Mary lần lượt
+    là 97,134,105
+    1.Tính điểm trung bình của mỗi đội
+    2.Đội thắng là đội có điểm trung bình cao nhất.In ra màn hình console đội thắng
+    cuộc và số điểm trung bình của đội đó.
+    3.Đừng quên kiểm tra các đội hòa nhau.
+</body>
+</html>

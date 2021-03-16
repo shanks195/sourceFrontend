@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*Thay đổi class (Thêm và xóa)
+        * THay đổi attribute (sữa)
+        *Thêm mới 1 attribute cho 1 phần tử và tự định nghĩa nó
+        *Bắt dược sự kiện click chuột của người dùng
+        => Làm hiểu ứng động
+        THêm 1 phần tử mới cho 1 html
+        Hoc cách truy xuất cho 1 phần tử bằng javascript
+        truy xuất bằng id của phần tử
+        Truy xuất bằng class của phần tử
+        Lưu ý: HTMLcolectionOf  không phải là array.Nó chỉ gần giống 1 dạng array,có length,có thể truy xuất vào phần tử
+        bằng index
+        Truy xuất bằng tên thẻ a,body,....
+        Truy xuất bằng selector của css
+        -Nếu muốn sử dụng những method,những function giành riêng cho array ta phải ép kiểu nó về array
+        =>Dùng cú pháp:Array.from(HTMLColectionOf)
+        */
+        var getId = document.getElementById("demo");
+        console.log("getId Tren: "+getId);
+        var getClass = document.getElementsByClassName("demo");
+        console.log("getClass Tren: "+getClass);
+        
+    </script>
+</head>
+<body>
+    <div id="demo">
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>  
+    </div>
+    
+    <script>
+        var getId = document.getElementById("demo");
+        // console.log(getId);
+        var getClass = document.getElementsByClassName("demo");
+        console.log(getClass);
+        var getTag = document.getElementsByTagName("div");
+        var getTagArray = Array.from(getTag);
+        console.log(getTagArray);
+        console.log(getTag);
+        var getClassArray=Array.from(getClass);
+        getClassArray.push("123");
+        console.log(getClassArray);
+        console.log(getClass[0]);
+        console.log(getClass[1]);
+        console.log(getClass[2]);
+        for (var index = 0;index<getClass.length;index++){
+            console.log("Phan tu thu ",index, "la: ",getClass[index])
+        }
+        for (var index1=0;index1<getClassArray.length;index1++){
+            console.log(getClassArray[index1])
+        }
+    </script>
+</body>
+</html>

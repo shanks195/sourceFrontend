@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <div id="demo" >id demo</div>
+
+    <div class="demo" data-title="test 1">Class demo 1</div>
+    <div class="demo" data-title="test 2">Class demo 2</div>
+    <div class="demo" data-title="test 3">Class demo 3</div>
+
+    <img  class="image" src="" >
+    <img class="image2" >
+</body>
+<script>
+    // debugger
+var img ="./imgs/photo-1-158270587240769675748.jpg";
+var image=document.querySelector(".image");
+var image2=document.querySelector(".image2");
+//Get
+var eleDatatile = document.querySelectorAll("[data-title]");
+var ArrayelDataTitle=Array.from(eleDatatile);
+console.log(ArrayelDataTitle);
+for(var index= 0; index<ArrayelDataTitle.length;index++ ){
+    console.log(ArrayelDataTitle[index],index);
+}
+for(var index= 0; index<ArrayelDataTitle.length;index++ ){
+    console.log(ArrayelDataTitle[index].getAttribute("data-title"));
+}
+var temp='';
+for(var index=0;index<ArrayelDataTitle.length;index++){
+   temp = temp + eleDatatile[index].getAttribute("data-title") + " ";
+}
+console.log(temp);
+//khi set gia tri data-title moi #demo =>trim() xoa di khoang cach du thừa
+document.getElementById("demo").setAttribute("data-title",temp.trim());
+console.log(ArrayelDataTitle);
+console.log(image);
+
+
+//Thay đổi thuộc tính có sẵn,GET /
+image.setAttribute("src",img);
+image.setAttribute("alt","This is the function atrribute");
+image.setAttribute("width","300");
+image.setAttribute("height","300");
+
+console.log(image2);
+image2.setAttribute("style","width:200px;height:300px;background-color:red;")
+image2.setAttribute("src",img);
+console.log("truy xuat thuoc tinh cach 2",image.src);
+console.log("truy xuat thuoc tinh cach 2",image.getAttribute("src"));
+</script>
+</html>

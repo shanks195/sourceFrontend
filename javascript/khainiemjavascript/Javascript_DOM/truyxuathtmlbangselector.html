@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* Truy xuat 1 phan tu bằng selector css
+        Yêu cầu phải nắm rõ phần selector css
+        #demo {}
+        .classdemo {}
+        Atrribute sellector{}
+        -querySelector() => Tra về  cho 1 phần tử dẩn tiện tìm thấy được mà match với selector
+        -querySelectorAll() => Trả về cho mình nhiều phần tử mà match với selector truyền vào => Không phải là Array mình phải 
+        ép kiểu Array.from()
+        */
+    </script>
+</head>
+<body>
+    <div id="demo" data-title="test">hello demo</div>
+    <div id="demo" data-title="test">hello demo</div>
+    <button data-toggle="modal">Click me</button>
+</body>
+<script>
+    var demoId = document.querySelector("#demo");
+    console.log(demoId);
+    var demoIdAll = document.querySelectorAll("#demo");
+    console.log(demoIdAll);
+var ArrayDemoAll =  Array.from(demoIdAll);
+    console.log(ArrayDemoAll);
+    var demoModel =document.querySelector("[data-title='test']");
+    console.log(demoModel);
+    var lengthArrayDemoAll = ArrayDemoAll.length;
+    console.log(lengthArrayDemoAll);
+    var btnModel =document.querySelector("[data-toggle='modal']");
+    console.log(btnModel);
+</script>
+</html>

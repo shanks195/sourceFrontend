@@ -1,0 +1,11 @@
+.row  .col:nth-child(1) {
+    
+    background-color: rgb(247, 188, 100);
+    
+}
+.row  .col:nth-child(2) {
+background-color: rgb(233, 219, 173);
+
+
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        /* Có 3 cách import css cho 1 phan tu
+        1.css inline <div style="color:red"></div>
+        2.Internal css <style></style>
+        3.Extenal css => thường dùng -> File riêng ở bên ngoài
+        
+        */
+    </script>
+    <style>
+        .background {
+            opacity: 0.5;
+            top: 0;
+            position: absolute;
+            width: 100%!important;
+            height: 1024px;
+            z-index: 2;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                
+            </div>
+            <div class="background">
+                <button onclick="changeStyeimg('./imgs/f310bb4317457ca411ba996f0fa6ef92.png_wh860.png')" class="changeStyenhat" style="background-color: rgb(247, 238, 238);border:none;padding: 1%;">CLICK ME</button>
+                <button onclick="changeStyeimg('./imgs/photo-1-158270587240769675748.jpg')" class="changeStyenhat" style="background-color: rgb(247, 238, 238);border:none;padding: 1%;">CLICK ME</button>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var background = document.querySelector(".background");
+        function changeStyeimg(img) {
+           // console.log(img);
+           var valueStyle ="background-image: url('" + img +"')";
+            if(img) {
+              console.log(background, img,valueStyle);
+                background.setAttribute("style",valueStyle);
+            } else {
+
+            }
+        }
+    </script>
+</body>
+</html>

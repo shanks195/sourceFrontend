@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       var bills =[124,48,268];
+        function calTip(bill){
+            var percent;
+           if(bill<50){
+                percent =0.2;
+
+            }else if(bill>=50 && bill <= 200){
+                percent = 0.15;
+            }else if (bill > 200) {
+                percent =0.1;
+            }
+            return percent * bill;
+        }
+        var tips = [
+            calTip(bills[0]),
+            calTip(bills[1]),
+            calTip(bills[3]),
+        ]
+        console.log(tips);
+        debugger;
+
+        var tip2 =[];
+        tip2.push(calTip(bills[0]));
+        tip2.push(calTip(bills[1]));
+        tip2.push(calTip(bills[2]));
+        console.log(tip2);
+
+        var tip3 =[];//length =0
+        tips3[tips3.length] = calTip(bills[0]);//length =1 => index hop le: 0;
+        tips3[tips3.length] = calTip(bills[1]);//length = 2 => index hop le :0, 1;
+        tips3[tips3.length] = calTip(bills[2]);//length = 3-> 0,1,2
+        console.log("tips 3",tips3);
+
+    </script>
+</head>
+<body>
+    Đề:John và gia đình của anh ta đi nghĩ dưỡng tại phan thiết và đã đến thưởng thức
+    tai 3 nhà hàng khác nhau.Hóa đơn cho mỗi nhà hàng lần lượt là $124,$48 và $268
+    Vì đây là nhà hàng 5 sao nên để giúp john trả tiền tip hợp lý cho nhân viên
+    theo quy luật như sau.Tip là 20% giá trị hóa đơn khi hóa đơn nhỏ hơn $50.Là 15% khi hóa đơn nằm trong khoảng $50 đến $200, và bằng 
+    10% nếu giá trị hóa dơn lớn hơn $200 
+    1.Tạo 1 mảng chứa thông tin của bills
+    2.Một function thuc hien chức năng tính tiền tiép
+    3.Kết quả thu được một hai array tiền tiếp va tổng tiền phải trả.
+
+</body>
+</html>

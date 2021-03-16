@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet" id="color-skink" href="css/style-1.css">
+    <script>
+        /*
+        Code trong javascript sẽ có 2 trường hợp thực thi
+        1.Chạy ngay từ đầu khi load lai trang
+        2.Chay ngay khi nhận nội dung tương tác từ người dùng (nhấn nút click,re chuột)
+        */
+    </script>
+</head>
+<body>
+    <p>sdadsdasdadadad esadadad aasdas asd ada sd a dad asd asd asd asd ad asd ada sdad ada
+        sadadadadadadasdasdadadaddadadadadadadsada
+    </p>
+    <p>sdadsdasdadadad esadadad aasdas asd ada sd a dad asd asd asd asd ad asd ada sdad ada
+        sadadadadadadasdasdadadaddadadadadadadsada
+    </p>
+    <p>sdadsdasdadadad esadadad aasdas asd ada sd a dad asd asd asd asd ad asd ada sdad ada
+        sadadadadadadasdasdadadaddadadadadadadsada
+    </p>
+    <button onclick="changestyleColor('css/style-2.css')" data-toggle="modal">hello</button>
+    <script>
+        var colorSkink = document.getElementById("color-skink");
+        console.log(colorSkink);
+        function changestyleColor(href) {
+           // console.log(color);
+            colorSkink.setAttribute("href",href);
+        }
+    </script>
+</body>
+</html>

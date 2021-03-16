@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBUNGDUNGTHUCTE</title>
+    <link id="style" rel="stylesheet" href="css/style.css">
+    <link id="style-1" rel="stylesheet" href="css/style-1.css">
+    </head>
+<style>
+
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <button onclick="changeStyenhat('./css/style-1.css')" class="changeStyenhat" style="background-color: rgb(247, 238, 238);border:none;padding: 1%;">CLICK ME</button>
+                <button onclick="changeStyeHongNhat('./css/style-2.css')" class="changeStyeHongNhat" style="background-color: rgb(219, 100, 183);border:none;padding: 1%;">CLICK ME</button>
+                <button onclick="changeStyecamNhat('./css/style-3.css')" class="changeStyecamgNhat" style="background-color: rgb(223, 158, 73);border:none;padding: 1%;">CLICK ME</button>
+                <button onclick="changeStyebackground('./css/style-4.css')" class="changeStyebackground" style="background-color: rgb(148, 141, 132);border:none;padding: 1%;">CLICK ME</button>
+
+            </div>
+            <div class="background">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var style = document.getElementById("style-1");       
+        function changeStyenhat(href) {
+           style.setAttribute("href", href);
+        }
+        function changeStyeHongNhat(href) {
+            style.setAttribute("href", href);
+        }
+        function changeStyecamNhat(href) {
+            style.setAttribute("href", href);
+        }
+        function changeStyebackground(href) {
+            style.setAttribute("href", href);
+        }
+      
+    </script>
+</body>
+</html>

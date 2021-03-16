@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // debugger
+        for(var run= 1; run<= 10; run= run+1){
+            console.log("run = ",run);
+        }
+        console.log("RUn chay xong vong lap=",run);
+        var john=['jhon','smith',29,true];
+        for(run=0;run<john.length;run++){
+            console.log("Phan tu thu " +(run+1)+" = ",john[run]);
+        }
+        var run1=1;
+        for(;run1<=10;){
+            console.log("run 1 =",run1);
+            run1=run1+1;
+        }
+        function calAverage(){
+            this.average =(this.math+this.physics)/2;
+            return this.average;
+        }
+        var arrStudents =[
+            {fullName:'Nguyen van a',math:9,physics:9},
+            {fullName:'Nguyen van B',math:9,physics:9},
+            {fullName:'Nguyen van C',math:9,physics:9},
+        ]
+        for(var index= 0; index <arrStudents.length;index++){
+            arrStudents[index].calAverage =calAverage;
+            arrStudents[index].calAverage();
+            // console.log(arrStudents[index]);
+        }
+        console.log("arrStudents =",arrStudents);
+      var   calAverage = function(){
+               var total=0;
+               var totalScores = 0;
+               for(key in this.scores){
+                //   total= total+1;
+                total += 1;
+                totalScores = totalScores + this.scores[key];
+                // console.log("scores "+key +" = ",this.scores[key]);   
+                //console.log("key =",key);
+               }
+               return totalScores /total;
+            //    console.log("total = "+ total);
+            //    console.log("totalScores = "+ totalScores);
+           }
+        var studentA = {
+            fullName: 'NGUYEN VAN A',
+            year: 1992,
+           scores: {
+                math:9,
+                physics:7.6,
+                chemistry:5.4,
+           },
+           calAverage:calAverage
+           
+          
+        }
+        console.log("điểm trung bình của thằng A:"+studentA.calAverage());
+       var studentB = {
+            fullName: 'NGUYEN VAN A',
+            year: 1994,
+           scores: {
+                math:10,
+                physics:7.9,
+                chemistry:7.4,
+           },
+           calAverage:calAverage
+        }
+        console.log("điểm trung bình của thằng B:"+studentB.calAverage());
+
+            
+        
+    </script>
+</head>
+<body>
+    <div id="vonglapfor">
+        for(statement 1; statement 2; statement 3){
+            //coding block to be executed
+        }
+        statement 1: Thực thi một lần trước khi chạy đoạn code bên trong
+        (code block)
+        statement 2: Định nghĩa điều kiện để có thể chạy vòng lặp tiếp theo
+        statement 3: Duoc thuc thi sau khi toan bo doan code ben trong hoan tất
+
+
+        cÚ Pháp vong lap while,do/while
+        while(condition){
+
+        }do{
+
+        }
+        while(condition);
+        while chỉ thưc thi khi điều kiện condition trả về true => kiểm tra trước làm sau
+        Do/while luon thưc thi đoạn code lần đầu tien,sau đó mới kiểm tra điều kiện
+        của những vòng lặp tiếp theo => làm trước kiểm tra sau
+        
+    </div>
+</body>
+</html>
