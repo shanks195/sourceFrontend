@@ -1,145 +1,158 @@
 
 #nav-tab {
-    position: absolute;
-    top: -2%;
-    right: 30%;
+  position: absolute;
+  top: -2%;
+  right: 30%;
 }
 
 .tooltip{
-    position: absolute;
-    right: 20px;
-    bottom: -20px;
-    height: 15px;
-    width: 15px;
-    background-color: rgb(222, 230, 236);
-    transform: rotate(45deg);
-    display: none;
-  }
- .tooltip.show{
-    display: block;
-  }
-  .wrapper-1{
-    position: absolute;
-    top: 65px;
-    display: flex;
-    width: 400px;
-    overflow: hidden;
-    border-radius: 5px;
-    background-color: rgb(222, 230, 236);
-    display: none;
-    transition: all 0.3s ease;
-  }
- .wrapper-1.show{
-    display: block;
-    display: flex;
-  }
-  .wrapper-1 ul{
-    width: 400px;
-    list-style: none;
-    padding: 10px;
-    transition: all 0.3s ease;
-  }
-  .wrapper-1 ul li{
-    line-height: 55px;
-  }
-  .wrapper-1 ul li a{
-    position: relative;
-    color: #0d0e0f;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 0 10px;
-    display: flex;
-    border-radius: 8px;
-    align-items: center;
-    text-decoration: none;
-  }
-  .wrapper-1 ul li:hover a{
-    background: #8c9297;
-  }
-  .wrapper-1 ul li a .icon{
-    height: 40px;
-    width: 40px;
-    margin-right: 13px;
-    background: #1b1e20;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-radius: 50%;
-  }
-  .wrapper-1 ul li a .icon span{
-    line-height: 40px;
-    font-size: 20px;
-    color: #e2e2ea;
-  }
-  .wrapper-1 ul li a i{
-    position: absolute;
-    right: 10px;
-    font-size: 25px;
-    pointer-events: none;
-  }
-  .wrapper-1 ul.setting-drop,
-  .wrapper-1 ul.help-drop{
-    display: none;
-  }
-  .wrapper-1 .arrow{
-    padding-left: 10px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #0b0c0e;
-    cursor: pointer;
-  }
-  .wrapper-1 .arrow span{
-    margin-right: 15px;
-  }
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  height: 15px;
+  width: 15px;
+  background-color: rgb(222, 230, 236);
+  transform: rotate(45deg);
+  display: none;
+}
+.tooltip.show{
+  display: block;
+}
+.wrapper-1{
+  position: absolute;
+  top: 65px;
+  display: flex;
+  width: 400px;
+  height:70vh;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: rgb(222, 230, 236);
+  display: none;
+  transition: all 0.3s ease;
+}
+.wrapper-1.show{
+  width: 383px;
+  display: block;
+  display: flex;
+}
+.wrapper-1 ul{
+  width: 485px;
+  list-style: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+.wrapper-1 ul li{
+  line-height: 55px;
+}
+.wrapper-1 ul li a{
+  position: relative;
+  color: #0d0e0f;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 10px;
+  display: flex;
+  border-radius: 8px;
+  align-items: center;
+  text-decoration: none;
+}
+.wrapper-1 ul li:hover a{
+  background: #8c9297;
+}
+.wrapper-1 ul li a .icon{
+  height: 40px;
+  width: 40px;
+  margin-right: 13px;
+  background: #1b1e20;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+}
+.wrapper-1 ul li a .icon span{
+  line-height: 40px;
+  font-size: 20px;
+  color: #e2e2ea;
+}
+.wrapper-1 ul li a i{
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  pointer-events: none;
+}
+.wrapper-1 ul.setting-drop,
+.wrapper-1 ul.help-drop{
+  display: none;
+}
+.wrapper-1 .arrow{
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #0b0c0e;
+  cursor: pointer;
+}
+.wrapper-1 .arrow span{
+  margin-right: 15px;
+}
 
-  .menu-bar li a .avatar-circle {
-    display: inline-block;
-    width: 17%;
-    height: 52px;
-    float: left;
+.menu-bar li a .avatar-circle {
+  display: inline-block;
+  width: 17%;
+  height: 52px;
+  float: left;
 }
 
 .menu-bar li a .avatar-circle  img {
-    height: 48px;
-    border-radius: 50%;
+  height: 48px;
+  border-radius: 50%;
 }
 
 .menu-bar li a {
-    box-sizing: border-box;
-    padding:2%!important;
-    overflow: hidden;
+  box-sizing: border-box;
+  padding:2%!important;
+  overflow: hidden;
 }
 
 .menu-bar li a span {
-    padding-left:5%;
-    display: inline-block;
-    float: left;
-}
-@media only screen and (max-width:800px) {
-  /* For tablets: */
-  
+  padding-left:5%;
+  display: inline-block;
+  float: left;
 }
 
- 
-@media only screen and (max-width:500px)  {
-  /* For mobile phones: */
-  .wrapper-1 {
-    width: 294px;
+@media only screen and (max-width:576px)  {
+  /*mobile thuong*/
+  .wrapper-1.show {
+    width: 95vw!important;
+    
+    }
+    .wrapper-1 {
+      
+      z-index:20000;
+      left: -68vw!important;
+      
+    }
 }
-ul.menu-bar {
-  margin-left: -14px;
+
+
+
+@media only screen and (min-width:577px) and (max-width:1024px)  {
+  /*Ipad pro, ipad */
+  .wrapper-1.show {
+    width: 50vw!important;
+    
+    }
+    .wrapper-1 {
+      
+      z-index:20000;
+      left: -23vw!important;
+      
+    }
+
 }
-ul.setting-drop {
-  margin-left: 86px;
-}
-ul.help-drop {
-  margin-left: 86px;
-}
-  #nav-tab {
-    position: absolute;
-    top: -2%;
-    right: 84%;
-    z-index: 100000;
-}
+
+
+
+@media only screen and (min-width:280px) and (max-width:540px) and (min-height:653px) and (max-height:720px) {
+  /*Suface Duo, galaxy Fold */
   
+
 }
