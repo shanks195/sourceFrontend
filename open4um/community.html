@@ -4,15 +4,299 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community || OpenFourum</title>
+    <title>Home || OpenFourum</title>
+    <style>
+        
+        @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css";
+        @import "css/body1.css";
+        @import "./css/header-2.css";
+        @import "./css/header-3.css";
+        @import "./css/nav-tab.css";
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+        * {
+            padding:0%;
+            margin: 0%;
+            font-family: 'Inconsolata', monospace;
+        }
+    </style>
+       
+    
 </head>
 <body>
-    <div id="community">
-        <div id="body">
-            <main>
-                
-            </main>
+    <!-- header-2 -->
+    <header id="header-2" class="header grid-3-6-3 grid-5-1-6-xm">
+        <div class="header grid-2-10 grid-3-9-xm grid-3-9-sr grid-4-9-cl">
+            <div class="header-logo logo">
+                <div class="logo-trademark">
+                    
+                </div>
+            </div>
+            <div class="header-search grid-12">
+                <div class="search_box grid-2-10 grid-3-9-xm grid-3-9-sr grid-5-8-cl">
+                    <div class="search_btn">
+                        <img src="./imgs/svg/search.svg" name="search" class="search" alt="">
+                    </div>
+                    <input type="text" class="input_search" placeholder="What are you looking for?">
+                </div>
+            </div>
         </div>
+        <div class="header grid-2c4-2c4-2c4-2c4-2c4">
+            <div class="logo-underlined logo-home">
+               <a href="#"><img src="./imgs/svg/house.svg" name="house" class="house" alt=""></a>
+            </div>
+            <div class="logo-underlined logo-page">
+                <a href="#/page"><img src="./imgs/svg/document.svg" name="document" class="document" alt=""></a>
+            </div>
+            <div class="logo-underlined logo-market">
+                <a href="#/market"><img src="./imgs/svg/shopping-store.svg" name="shopping-store" class="shopping-store" alt=""></a>
+            </div>
+            <div class="logo-underlined logo-video">
+                <a href="#/video"><img src="./imgs/svg/video.svg" name="video" class="video" alt=""></a>
+
+            </div>
+            <div class="logo-underlined logo-group-message">
+                <a href="#/community"><img src="./imgs/svg/worldwide.svg" alt=""></a>
+            </div>
+        </div>
+        <div class="header grid-2c4-2c4-2c4-2c4-2c4 header-logo-av grid-3-3-3-3-xm">
+            <div class="header-left logo-avatar grid-5-6">
+                <div class="logo-avatar-circle">
+                    <img src="" class="image-avatar" alt="">
+                </div>
+                <span class="name-avatar">Toàn</span>
+            </div>
+            <div class="header-left  logo-create grid-12">
+                <div class="logo-circle">
+                    <img src="./imgs/svg/plus.svg" alt="">
+                </div>
+            </div>
+            <div class="header-left logo-message grid-12">
+                <div class="logo-circle">
+                   <img src="./imgs/svg/chat.svg" class="chat" name="chat" alt=""> 
+                </div>
+            </div>
+            <div class="header-left logo-information grid-12">
+                <div class="logo-circle">
+                    <img src="./imgs/svg/bell.svg" class="bell" name="bell" alt="">
+                </div>
+            </div>
+            <div class="header-left logo-option grid-12">
+                <div class="logo-circle">
+                    <img src="./imgs/svg/arrow-pointing-downwards.svg" name="arrow-pointing-downwards" class="arrow-pointing-downwards" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-3 -->
+    <div id="header-3">
+        <div class="wrapper">
+            <input type="checkbox" id="btn" hidden>
+            <label for="btn" class="menu-btn">
+              <i class="fas fa-bars"></i>
+              <i class="fas fa-times"></i>
+            </label>
+            <nav id="sidebar">
+              <div class="title">Side Menu</div>
+              <ul class="list-items">
+                <li><a href="#">
+                    <div class="avatar-circle">
+                        <img src="./imgs/avatar/avatar-1.jpg" width="100%" alt="">
+                    </div>
+                    <span>Tô Toàn</span></a></li>
+                <li><a href="#"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#/page"><i class="fas fa-file-alt"></i>Pages</a></li>
+                <li><a href="#/market"><i class="fas fa-bullhorn"></i>Markets</a></li>
+                <li><a href="#/video"><i class="fas fa-film"></i>Videos</a></li>
+                <li><a href="#/community"><i class="fas fa-atlas"></i>Community</a></li>
+                <div class="icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+              </ul>
+            </nav>
+        </div>
+        <div class="content" id="content">
+            <div id="body">
+                <div class="container-1 body grid-4-4-4 ">
+                    <div class="information text-center">
+                        <div class="information-user information-fluid margin-bottom">
+                            <ul>
+                                <li class="user">
+                                    <a href="">
+                                        <div class="avatar-user circle">
+                                            <img src="./imgs/avatar/avatar-Nguyen-to-the-toan.jpg" alt="">
+                                        </div>
+                                        <p>Nguyễn Tô Thế Toàn</p>
+                                    </a>
+                                </li>                               
+                                <li><p>6 views</p></li>
+                                <li><p>7 follower</p></li>
+                                <li><p>3 followed</p></li>
+                            </ul>
+                        </div>
+                        <div class="information-order information-fluid margin-bottom">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="./imgs/svg/newspaper.svg" class="icon" alt="">
+                                        <p>News</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./imgs/svg/flag.svg" class="icon" alt="">
+                                        <p>Discover</p>
+                                    </a> 
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./imgs/svg/rating.svg" class="icon" alt="">
+                                        <p>Topic followed</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slider">
+    
+                    </div>
+                    <main class="main grid-4">
+                        <div class="create-post margin-bottom"></div>
+                        <div class="create-meeting margin-bottom"></div>
+                        <div class="make-friend-may-now margin-bottom"></div>
+                        <div class="posted-post margin-bottom"></div>
+                    </main>
+                    <div class="sidebar grid-4-sidebar">
+                        <div class="outstanding-topic"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- nav-tab -->
+    <div id="nav-tab">
+        <div class="tooltip">
+        </div>
+        <div class="wrapper-1">
+                    <ul class="menu-bar">
+                        <li>
+                            <a href="#">
+                                <div class="avatar-circle">
+                                    <img src="./imgs/avatar/avatar-1.jpg" width="100%" alt="">
+                                </div>
+                                <span>Tô Toàn</span>
+                            </a>
+                        </li>
+                        <li class="setting-item">
+                            <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-cog"></span></div>
+                        Settings & privacy <i class="fas fa-angle-right"></i>
+                                    
+                            </a>
+                        </li>
+                        <li class="help-item">
+                            <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-question-circle"></span></div>
+                        Help & support <i class="fas fa-angle-right"></i>
+                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-user"></span></div>
+                        About us 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                    <div class="icon">
+                                        <span class="fas fa-comment-alt"></span></div>
+                        Feedback 
+                            </a>
+                        </li>
+                    </ul>
+            <!-- Settings & privacy Menu-items -->
+                    <ul class="setting-drop">
+                        <li class="arrow back-setting-btn"><span class="fas fa-arrow-left"></span>Settings & privacy</li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <span class="fas fa-user"></span>
+                                </div>
+                                Personal info 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <span class="fas fa-lock"></span>
+                                </div>
+                                Password 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <span class="fas fa-address-book"></span></div>
+                            Activity log 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <span class="fas fa-globe-asia"></span>
+                                </div>
+                                    Languages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <span class="fas fa-sign-out-alt"></span>
+                                </div>
+                                Log out 
+                            </a>
+                        </li>
+                    </ul>
+                        <!-- Help & support Menu-items -->
+                                <ul class="help-drop">
+                                    <li class="arrow back-help-btn"><span class="fas fa-arrow-left"></span>Help & support</li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="icon">
+                                                <span class="fas fa-question-circle"></span>
+                                            </div>
+                                        Help centre 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="icon">
+                                                    <span class="fas fa-envelope"></span>
+                                            </div>
+                                    Support Inbox 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <div class="icon">
+                                                <span class="fas fa-comment-alt"></span>
+                                            </div>
+                                    Send feedback </a>
+                                    </li>
+                                    <li><a href="#">
+                                                <div class="icon">
+                                                    <span class="fas fa-exclamation-circle"></span></div>
+                                    Report problem </a></li>
+                                </ul>
+        </div>
+        <script src="./js/nav-tab.js"></script>
     </div>
 </body>
 </html>
